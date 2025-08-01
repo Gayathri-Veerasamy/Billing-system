@@ -202,7 +202,9 @@ app.get('/items/:id', async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 8001; // Change the port number if needed
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+const PORT = process.env.PORT || 10000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
+
